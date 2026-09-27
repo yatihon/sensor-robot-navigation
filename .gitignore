@@ -7,3 +7,8 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+models/*.joblib
+!models/.gitkeep
+
+*~

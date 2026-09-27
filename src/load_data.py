@@ -13,7 +13,10 @@ def find_data_file(sensor_count):
     filename = f"sensor_readings_{sensor_count}.data"
     matches = list(DATA_DIRECTORY.rglob(filename))
     if not matches:
-        raise FileNotFoundError(f"Файл {filename} не найден в {DATA_DIRECTORY}")
+        raise FileNotFoundError(
+            f"Файл {filename} не найден. "
+            "Запустите: python src/download_data.py"
+    )
     return matches[0]
 
 def load_data(sensor_count=24):
