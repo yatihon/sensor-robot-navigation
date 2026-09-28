@@ -132,7 +132,7 @@ ML-проект для предсказания команды движения 
 Рекомендуется Python 3.12.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/USERNAME/sensor-robot-navigation.git
 cd sensor-robot-navigation
 
 python3 -m venv .venv
